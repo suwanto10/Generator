@@ -17,14 +17,14 @@ class Body extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              "WELCOME TO SHOP",
-              style: TextStyle(fontWeight: FontWeight.bold),
+              "WELCOME",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
             ),
-             SizedBox(height: size.height * 0.05),
-             SvgPicture.asset(
-               "assets/icons/chat.svg",
-               height: size.height * 0.45,
-             ),
+            SizedBox(height: size.height * 0.05),
+            SvgPicture.asset(
+              "assets/icons/chat.svg",
+              height: size.height * 0.45,
+            ),
             SizedBox(height: size.height * 0.05),
             RoundedButton(
               text: "LOGIN",
