@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:newlogin/details/components/body.dart';
+import 'package:newlogin/screen/details/components/body.dart';
 import 'package:newlogin/models/product.dart';
+
+import '../../constants.dart';
 
 class DetailsScreen extends StatelessWidget {
   final Product product;
@@ -37,7 +39,7 @@ class DetailsScreen extends StatelessWidget {
           icon: SvgPicture.asset("assets/icons/cart.svg"),
           onPressed: () {},
         ),
-        SizedBox(width: 20 / 2)
+        SizedBox(width: kDefaultPaddin / 2)
       ],
     );
   }

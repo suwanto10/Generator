@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:newlogin/models/product.dart';
 
-import '../../constants.dart';
+import '../../../constants.dart';
 import 'add_to_cart.dart';
 import 'counter_with_fav_btn.dart';
 import 'description.dart';
@@ -13,7 +13,6 @@ class Body extends StatelessWidget {
   const Body({Key key, this.product}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    // It provide us total height and width
     Size size = MediaQuery.of(context).size;
     return SingleChildScrollView(
       child: Column(
@@ -31,7 +30,7 @@ class Body extends StatelessWidget {
                   ),
                   // height: 500,
                   decoration: BoxDecoration(
-                    color: Colors.redAccent,
+                    color: Colors.white,
                     borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(24),
                       topRight: Radius.circular(24),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:newlogin/details/details_screen.dart';
+import 'package:newlogin/screen/details/details_screen.dart';
 import 'package:newlogin/models/product.dart';
 import 'package:newlogin/screen/Dashboard/components/item_card.dart';
 
@@ -17,7 +17,7 @@ class Body extends StatelessWidget {
         ),
         const Padding(
           padding: EdgeInsets.symmetric(horizontal: 20),
-          child: Text("Top Product",
+          child: Text("Top Products",
               style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)),
         ),
         const SizedBox(

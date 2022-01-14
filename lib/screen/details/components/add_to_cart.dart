@@ -27,13 +27,13 @@ class AddToCart extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(18),
               border: Border.all(
-                color: Colors.white,
+                color: Colors.blue,
               ),
             ),
             child: IconButton(
               icon: SvgPicture.asset(
                 "assets/icons/add_to_cart.svg",
-                color: Colors.white,
+                color: Colors.blue,
               ),
               onPressed: () {},
             ),

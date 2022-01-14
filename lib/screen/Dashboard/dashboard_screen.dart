@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:newlogin/components/custom_bottom_navbar.dart';
+import 'package:newlogin/enums.dart';
 import 'package:newlogin/screen/Dashboard/components/body.dart';
+
+import '../../constants.dart';
 
 class DashboardScreen extends StatelessWidget {
   const DashboardScreen({Key key}) : super(key: key);
@@ -10,27 +14,33 @@ class DashboardScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(context),
       body: Body(),
+      // bottomNavigationBar: CustomBottomNavBar(
+      //   selectedMenu: MenuState.home,
+      // ),
     );
   }
 
   AppBar buildAppBar(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.blueAccent,
+      backgroundColor: Colors.blue,
       elevation: 0,
       leading: IconButton(
-        icon: SvgPicture.asset("assets/icons/search.svg"),
-        onPressed: () {},
+        icon: SvgPicture.asset(
+          'assets/icons/back.svg',
+          color: Colors.white,
+        ),
+        onPressed: () => Navigator.pop(context),
       ),
       actions: <Widget>[
         IconButton(
-          icon: SvgPicture.asset(
-            "assets/icons/cart.svg",
-          ),
+          icon: SvgPicture.asset("assets/icons/search.svg"),
           onPressed: () {},
         ),
-        const SizedBox(
-          width: 20 / 2,
-        )
+        IconButton(
+          icon: SvgPicture.asset("assets/icons/cart.svg"),
+          onPressed: () {},
+        ),
+        SizedBox(width: kDefaultPaddin / 2)
       ],
     );
   }
