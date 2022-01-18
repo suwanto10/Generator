@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:newlogin/components/bottom_navbar.dart';
 // import 'package:newlogin/components/custom_bottom_navbar.dart';
 // import 'package:newlogin/enums.dart';
 import 'package:newlogin/screen/Dashboard/components/body.dart';
@@ -17,6 +18,7 @@ class DashboardScreen extends StatelessWidget {
     return Scaffold(
       appBar: buildAppBar(context),
       body: Body(),
+      bottomNavigationBar: BottomNavbar(),
       // bottomNavigationBar: CustomBottomNavBar(
       //   selectedMenu: MenuState.home,
       // ),
