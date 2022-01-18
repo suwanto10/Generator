@@ -1,6 +1,7 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:newlogin/screen/Dashboard/dashboard_screen.dart';
+import 'package:newlogin/screen/ProfilePage.dart';
 import 'package:newlogin/screen/cart/cart_screen.dart';
 
 class CurvedNavbar extends StatelessWidget {
@@ -58,7 +59,7 @@ class CurvedNavbar extends StatelessWidget {
             context,
             MaterialPageRoute(
               builder: (context) {
-                return CartScreen();
+                return ProfilePage();
               },
             ),
           );
