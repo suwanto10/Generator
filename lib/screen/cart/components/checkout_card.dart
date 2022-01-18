@@ -2,9 +2,6 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_svg/svg.dart';
 import 'package:newlogin/components/default_button.dart';
 
-// import '../../../constants.dart';
-// import '../../../size_config.dart';
-
 class CheckoutCard extends StatelessWidget {
   const CheckoutCard({
     Key key,
