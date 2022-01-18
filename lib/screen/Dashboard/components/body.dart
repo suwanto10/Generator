@@ -1,12 +1,19 @@
+// import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:newlogin/models/product.dart';
+// import 'package:newlogin/screen/Dashboard/components/search_widget.dart';
 import 'package:newlogin/screen/details/details_screen.dart';
 import 'package:newlogin/screen/Dashboard/components/item_card.dart';
 
-class Body extends StatelessWidget {
+class Body extends StatefulWidget {
   const Body({Key key}) : super(key: key);
 
   @override
+  State<Body> createState() => _BodyState();
+}
+
+class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     return Column(
       // children: <Widget>[Text("Selamat Anda Berhasil Login")],

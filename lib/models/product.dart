@@ -46,8 +46,14 @@ List<Product> demoProducts = [
       title: "Kursi Transparan",
       price: 15000,
       description: desc,
-      image: "assets/images/domar_app.png")
+      image: "assets/images/domar_app.png"),
+  Product(
+      id: 7,
+      title: "Meja Transparan",
+      price: 25000,
+      description: desc,
+      image: "assets/images/domar_app.png"),
 ];
 
 String desc =
-    "Ini adalah deskripsi singkat dari produk yang sedang ditampilkan..semoga hari anda menyenangkan";
+    "Ini adalah contoh deskripsi singkat dari produk yang sedang ditampilkan..Ini adalah contoh deskripsi singkat dari produk yang sedang ditampilkan..semoga hari anda menyenangkan";

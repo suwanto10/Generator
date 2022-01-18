@@ -1,10 +1,6 @@
-// import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:newlogin/components/bottom_navbar.dart';
-// import 'package:newlogin/components/custom_bottom_navbar.dart';
-// import 'package:newlogin/enums.dart';
 import 'package:newlogin/screen/Dashboard/components/body.dart';
 import 'package:newlogin/screen/cart/cart_screen.dart';
 
@@ -19,9 +15,6 @@ class DashboardScreen extends StatelessWidget {
       appBar: buildAppBar(context),
       body: Body(),
       bottomNavigationBar: BottomNavbar(),
-      // bottomNavigationBar: CustomBottomNavBar(
-      //   selectedMenu: MenuState.home,
-      // ),
     );
   }
 
@@ -34,7 +27,16 @@ class DashboardScreen extends StatelessWidget {
           'assets/icons/back.svg',
           color: Colors.white,
         ),
-        onPressed: () => Navigator.pop(context),
+        onPressed: () {
+          // Navigator.push(
+          //   context,
+          //   MaterialPageRoute(
+          //     builder: (context) {
+          //       return DashboardScreen();
+          //     },
+          //   ),
+          // );
+        },
       ),
       actions: <Widget>[
         IconButton(
