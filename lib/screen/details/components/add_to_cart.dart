@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:newlogin/models/product.dart';
+import 'package:newlogin/screen/cart/cart_screen.dart';
 
 import '../../../constants.dart';
 
@@ -35,7 +36,16 @@ class AddToCart extends StatelessWidget {
                 "assets/icons/add_to_cart.svg",
                 color: Colors.blue,
               ),
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return CartScreen();
+                    },
+                  ),
+                );
+              },
             ),
           ),
           Expanded(

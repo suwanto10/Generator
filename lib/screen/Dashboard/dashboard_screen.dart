@@ -1,8 +1,11 @@
+// import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:newlogin/components/custom_bottom_navbar.dart';
-import 'package:newlogin/enums.dart';
+// import 'package:newlogin/components/custom_bottom_navbar.dart';
+// import 'package:newlogin/enums.dart';
 import 'package:newlogin/screen/Dashboard/components/body.dart';
+import 'package:newlogin/screen/cart/cart_screen.dart';
 
 import '../../constants.dart';
 
@@ -38,7 +41,16 @@ class DashboardScreen extends StatelessWidget {
         ),
         IconButton(
           icon: SvgPicture.asset("assets/icons/cart.svg"),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) {
+                  return CartScreen();
+                },
+              ),
+            );
+          },
         ),
         SizedBox(width: kDefaultPaddin / 2)
       ],

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:newlogin/screen/details/details_screen.dart';
 import 'package:newlogin/models/product.dart';
+import 'package:newlogin/screen/details/details_screen.dart';
 import 'package:newlogin/screen/Dashboard/components/item_card.dart';
 
 class Body extends StatelessWidget {
@@ -27,7 +27,7 @@ class Body extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20.0),
             child: GridView.builder(
-              itemCount: products.length,
+              itemCount: demoProducts.length,
               gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
                 mainAxisSpacing: 20.0,
@@ -35,12 +35,12 @@ class Body extends StatelessWidget {
                 childAspectRatio: 0.75,
               ),
               itemBuilder: (context, index) => ItemCard(
-                product: products[index],
+                product: demoProducts[index],
                 press: () => Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => DetailsScreen(
-                      product: products[index],
+                      product: demoProducts[index],
                     ),
                   ),
                 ),

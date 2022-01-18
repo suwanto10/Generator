@@ -10,7 +10,7 @@ class Product {
   });
 }
 
-List<Product> products = [
+List<Product> demoProducts = [
   Product(
       id: 1,
       title: "Teh Poci",
